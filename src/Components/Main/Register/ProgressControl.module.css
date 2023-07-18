@@ -1,0 +1,20 @@
+.progressControlContainer {
+  /* outline: 1px solid tomato; */
+  display: flex;
+  justify-content: flex-end;
+  margin: 40px 5px;
+}
+
+.buttonNext {
+  /* outline: 1px solid purple; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color:#EE749E;
+  color: white;
+}
