@@ -1,6 +1,6 @@
-import { StepProgress } from "./StepProgress";
-import { Step1 } from "./Step1";
-import { ProgressControl } from "./ProgressControlOne";
+import { StepProgress } from "./StepProgress/StepProgress";
+import { Step1 } from "./Step1/Step1";
+import { ProgressControl } from "./ProgressControl/ProgressControlOne";
 import styles from './Index.module.css'
 
 export function Register() {
