@@ -1,9 +1,8 @@
-import productData from 'Components/Main/Cart/productData.json'
 import { ReactComponent as Minus } from 'assets/icons/minus.svg'
 import { ReactComponent as Plus } from 'assets/icons/plus.svg'
 import styles from './ProductList.module.css'
 
-function ProductInfo() {
+function ProductInfo({productData}) {
   const products = productData.data.map((product) => {
     return (
       <>
@@ -34,10 +33,11 @@ function ProductInfo() {
 }
 
 
-export function ProductList() {
+export function ProductList({productData}) {
   return (
     <section className={styles.productList} data-total-price="0">
-      <ProductInfo />
+      <ProductInfo
+      productData={productData} />
     </section>
   )
 }

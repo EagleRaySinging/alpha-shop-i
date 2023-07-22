@@ -1,10 +1,12 @@
-# Alpha Shop I
+# Alpha Shop II
 
-![Cover Page](./public/alpha-shop-I.jpg)
+![Cover Page](./public/alpha-shop-II.jpg)
 
 This is an web-shop with step control function to show the status of product.
 
 Three parts to show different condition, includes delivery address information, the way of delivery and payment information.
+
+Add part of cart, includes products info, delivery fee and total amount.
 
 More function will be expansion.
 
@@ -36,7 +38,6 @@ Here are the steps to install and start the server:
    (If you are not navigated automatically.)
 
 4. You may stop it by typing Ctrl + c anytime
-   
 
 ## Development Tools
 
