@@ -1,0 +1,14 @@
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 360px;
+  margin: 80px 0 0 100px;
+  border: 1px solid rgb(193, 186, 186);
+  border-radius: 3px;
+}
+
+.cartTitle {
+  margin-top: 15px;
+  padding-left: 20px;
+}
