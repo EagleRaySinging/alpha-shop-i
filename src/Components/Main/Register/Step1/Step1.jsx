@@ -1,5 +1,5 @@
 import styles from './Step1.module.css'
-import stepOneData from './Step1Data'
+import stepOneData from './Step1Data.json'
 
 function SelectWrap({ selectData, label }) {
   return (

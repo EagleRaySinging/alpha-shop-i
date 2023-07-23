@@ -1,5 +1,4 @@
 .payInfo {
-  /* outline: 1px solid purple; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,7 +6,6 @@
 }
 
 .container {
-  /* outline: 1px solid tomato; */
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(2, 0.5);
