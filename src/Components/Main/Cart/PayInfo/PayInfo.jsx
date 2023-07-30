@@ -1,6 +1,6 @@
 import styles from './PayInfo.module.css'
 
-export function PayInfo() {
+export function PayInfo({total}) {
   return (
     <>
       <section className={styles.cartInfoShipping}>
@@ -9,7 +9,7 @@ export function PayInfo() {
       </section>
       <section className={styles.cartInfoTotal}>
         <div className={styles.text}>小計</div>
-        <div className={styles.price}>$5,298</div>
+        <div className={styles.price}>${total}</div>
       </section>
     </>
   )

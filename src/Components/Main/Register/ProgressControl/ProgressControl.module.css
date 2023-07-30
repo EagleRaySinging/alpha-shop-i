@@ -1,12 +1,42 @@
 .progressControlContainer {
-  /* outline: 1px solid tomato; */
   display: flex;
   justify-content: flex-end;
   margin: 40px 5px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(211, 206, 206);
 }
 
-.buttonNext {
-  /* outline: 1px solid purple; */
+.buttonStep {
+  display: flex;
+  flex-direction: row;
+  width: 650px;
+  justify-content: space-between;
+}
+.buttonStepPageOne {
+  display: flex;
+  flex-direction: row;
+  width: 650px;
+  justify-content: flex-end;
+}
+
+.buttonPre {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color:white;
+  color: black;
+}
+
+.leftArrow {
+  fill: black
+}
+
+.buttonNext, .buttonConfirm {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,3 +48,4 @@
   background-color:#EE749E;
   color: white;
 }
+

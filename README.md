@@ -1,6 +1,6 @@
-# Alpha Shop II
+# Alpha Shop III
 
-![Cover Page](./public/alpha-shop-II.jpg)
+![Cover Page](./public/alpha-shop-III.jpg)
 
 This is an web-shop with step control function to show the status of product.
 

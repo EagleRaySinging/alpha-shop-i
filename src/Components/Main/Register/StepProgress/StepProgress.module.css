@@ -1,5 +1,4 @@
 .stepProgress {
-  /* outline: 1px solid tomato; */
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(2, 0.5fr);
@@ -42,6 +41,11 @@
 }
 
 .text {
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   font-size: 5px;
@@ -63,3 +67,7 @@
   font-size: 15px;
 }
 
+svg {
+  width: 20px;
+  height: 20px;
+}
