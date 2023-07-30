@@ -7,11 +7,10 @@ export function Step2() {
         <h3 className={styles.formTitle}>運送方式</h3>
         <section className={styles.deliverWays}>
           <label className={styles.deliverStandard} data-price="0">
-            <input className={styles.deliverCheck}
+            <input defaultChecked className={styles.deliverCheck}
               id="shipping-standard"
               type="radio"
               name="shipping"
-              checked
             />
             <div className={styles.deliverInfo}>
               <div className={styles.deliverWay}>
