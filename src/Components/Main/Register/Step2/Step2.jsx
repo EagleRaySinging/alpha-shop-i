@@ -1,8 +1,7 @@
 import styles from "./Step2.module.css";
 
-export function Step2() {
+export default function Step2() {
   return (
-    <>
       <form className={styles.formBody} data-phase="shipping">
         <h3 className={styles.formTitle}>運送方式</h3>
         <section className={styles.deliverWays}>
@@ -34,6 +33,5 @@ export function Step2() {
           </label>
         </section>
       </form>
-    </>
   );
 }

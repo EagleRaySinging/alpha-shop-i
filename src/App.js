@@ -1,5 +1,5 @@
-import { Register } from "./Components/Main/Register/Index.jsx";
-import { Cart } from "Components/Main/Cart/Cart.jsx";
+import  Register  from "./components/Main/Register/Index.jsx";
+import  Cart  from "components/Main/Cart/Cart.jsx";
 import styles from './App.module.css'
 
 function App() {

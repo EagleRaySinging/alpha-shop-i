@@ -1,8 +1,7 @@
 import styles from "./Step3.module.css";
 
-export function Step3() {
+export default function Step3() {
   return (
-    <>
       <form className={styles.paymentForm} data-phase="credit-card">
         <h3 className={styles.paymentTitle}>付款資訊</h3>
         <section className={styles.paymentInfo}>
@@ -26,6 +25,5 @@ export function Step3() {
           </div>
         </section>
       </form>
-    </>
   );
 }

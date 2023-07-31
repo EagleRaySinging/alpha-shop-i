@@ -4,33 +4,29 @@ import { ReactComponent as LeftArrow } from "assets/icons/left-arrow.svg";
 
 function ButtonPrevious({handleClickPrevious}) {
   return (
-    <>
       <button className={styles.buttonPre} onClick={handleClickPrevious}>
         <LeftArrow className={styles.leftArrow} />
         上一步
       </button>
-    </>
   );
 }
 function ButtonNext({handleClickNext}) {
   return (
-    <>
       <button className={styles.buttonNext} onClick={handleClickNext}>
         下一步
         <RightArrow className={styles.rightArrow} />
       </button>
-    </>
   );
 }
 function ButtonConfirm() {
   return (
-    <>
-      <button className={styles.buttonConfirm}>確認下單</button>
-    </>
+      <button className={styles.buttonConfirm}>
+        確認下單
+      </button>
   );
 }
 
-export function ProgressControl({ step, setStep }) {
+export default function ProgressControl({ step, setStep }) {
   function handleClickNext() {
     if (step < 3) {
       setStep((s) => s + 1);
@@ -43,7 +39,6 @@ export function ProgressControl({ step, setStep }) {
   }
 
   return (
-    <>
       <section className={styles.progressControlContainer}>
         <section className={(step === 1) ? styles.buttonStepPageOne : styles.buttonStep} data-phase="address">
           {(step === 2 || step === 3) && <ButtonPrevious 
@@ -53,6 +48,5 @@ export function ProgressControl({ step, setStep }) {
           {(step === 3) && <ButtonConfirm />}
         </section>
       </section>
-    </>
   );
 }

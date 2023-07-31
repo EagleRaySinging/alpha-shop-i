@@ -1,9 +1,8 @@
 import styles from './StepProgress.module.css'
 import { ReactComponent as PgComplete } from "assets/icons/pg-complete.svg";
 
-export function StepProgress({step}) {
+export default function StepProgress({step}) {
   return(
-    <>
         <section className={styles.stepProgress} data-phase="1" data-total-price="0">
           <h2 className={styles.checkBill}>結帳</h2>
           <section className={styles.progressContainer}>
@@ -29,7 +28,6 @@ export function StepProgress({step}) {
             </span>
           </section>
           </section>
-          </>
   )
 }    
     

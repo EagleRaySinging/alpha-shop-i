@@ -3,20 +3,17 @@ import stepOneData from './Step1Data.json'
 
 function SelectWrap({ selectData, label }) {
   return (
-    <>
       <select>
         <option value="" defaultValue>請選擇{label}</option>
         {selectData.map((data) => {
           return <option key={data.value} value={data.value}>{data.name}</option>
         })}
       </select>
-    </>
   )
 }
 
-export function Step1() {
+export default function Step1() {
   return (
-    <>
       <section className={styles.payInfo}>
         <form className={styles.container} data-phase="address">
           <h3 className={styles.formTitle}>寄送地址</h3>
@@ -59,6 +56,6 @@ export function Step1() {
             </div>
           </section>
         </form>
-      </section></>
+      </section>
   )
 }

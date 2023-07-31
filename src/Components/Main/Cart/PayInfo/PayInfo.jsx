@@ -1,6 +1,6 @@
 import styles from './PayInfo.module.css'
 
-export function PayInfo({total}) {
+export default function PayInfo({total}) {
   return (
     <>
       <section className={styles.cartInfoShipping}>
