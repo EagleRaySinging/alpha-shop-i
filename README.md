@@ -1,12 +1,14 @@
-# Alpha Shop III
+# Alpha Shop IV
 
-![Cover Page](./public/alpha-shop-III.jpg)
+![Cover Page](./public/alpha-shop-IV.jpg)
 
 This is an web-shop with step control function to show the status of product.
 
 Three parts to show different condition, includes delivery address information, the way of delivery and payment information.
 
 Add part of cart, includes products info, delivery fee and total amount.
+
+console.log can read pay information and cart's total amount.
 
 More function will be expansion.
 

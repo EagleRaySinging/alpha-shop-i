@@ -1,6 +1,9 @@
 import styles from "./ProgressControl.module.css";
 import { ReactComponent as RightArrow } from "assets/icons/right-arrow.svg";
 import { ReactComponent as LeftArrow } from "assets/icons/left-arrow.svg";
+import { useContext } from "react";
+import { FormContext } from "context/FormContext";
+import { CartContext } from "context/CartContext";
 
 function ButtonPrevious({handleClickPrevious}) {
   return (
@@ -19,8 +22,21 @@ function ButtonNext({handleClickNext}) {
   );
 }
 function ButtonConfirm() {
+
+  const {payInfo} = useContext(FormContext)
+  const {totalAmount} = useContext(CartContext)
+
+  const handleOnClick = () => {
+    console.log('PayInfo:--------')
+    console.log('cardName:', payInfo.cardName)
+    console.log('cardNumber:', payInfo.cardNumber)
+    console.log('cardExpireDate:', payInfo.cardExpireDate)
+    console.log('cardCVC:', payInfo.cardCVC)
+    console.log('totalAmount:', totalAmount)
+  }
+
   return (
-      <button className={styles.buttonConfirm}>
+      <button className={styles.buttonConfirm} onClick={() => handleOnClick()}>
         確認下單
       </button>
   );

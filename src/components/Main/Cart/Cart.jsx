@@ -2,8 +2,8 @@ import { ReactComponent as Minus } from "assets/icons/minus.svg";
 import { ReactComponent as Plus } from "assets/icons/plus.svg";
 import PayInfo from "./PayInfo/PayInfo";
 import styles from "./Cart.module.css";
-import productData from "./productData.json";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "context/CartContext";
 
 function CartItem({product, onClick}) {
   return (
@@ -41,11 +41,9 @@ function CartItem({product, onClick}) {
 }
 
 export default function Cart() {
-  const [products, setProducts] = useState(productData.data);
+  
+  const {products, setProducts, totalAmount} = useContext(CartContext)
 
-  const totalAmount = products.reduce((accumulator, currentValue) => 
-  accumulator.quantity * accumulator.price + currentValue.quantity * currentValue.price
-  )
 
   function handleClickCalc(id, quantity, symbol) {
     let nextProducts = []
